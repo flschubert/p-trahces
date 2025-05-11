@@ -2066,7 +2066,7 @@ def generate_results_tab(tab:st.delta_generator.DeltaGenerator)->None:
                 tickmode='array',
                 tickvals=df_scenarios["scenario_name"]
             ),
-            showlegend=False
+            showlegend=True
         )
 
         expander_heat_flow_comparison.plotly_chart(fig_scenarios)
