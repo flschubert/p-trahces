@@ -1,0 +1,120 @@
+{
+    "default_name": "VBZ, Zurich",
+
+    "temperature_control_curves": {
+        "VBZ Cobra Tram, heating to 16°C": {
+            "heating": [
+                [-22, 9],
+                [-10, 16],
+                [16, 16]
+            ],
+            "cooling": [
+                [18, 23],
+                [20, 23],
+                [25, 25],
+                [28, 28]
+            ]
+        },
+        "VBZ Cobra Tram, heating to 18°C": {
+            "heating": [
+                [-22, 9],
+                [-10, 18],
+                [18, 18]
+            ],
+            "cooling": [
+                [18, 23],
+                [20, 23],
+                [25, 25],
+                [28, 28]
+            ]
+        },
+        "VBZ Cobra Tram, heating to 20°C": {
+            "heating": [
+                [-22, 9],
+                [-10, 20],
+                [20, 20]
+            ],
+            "cooling": [
+                [18, 23],
+                [20, 23],
+                [25, 25],
+                [28, 28]
+            ]
+        }
+    },
+
+    "vehicle": {
+        "name": "VBZ Cobra Tram",
+        "data": {
+            "length": 35.93,
+            "width": 2.40,
+            "height": 2.70,
+            "area_windows_front": 3.0,
+            "area_windows_side": 25.3,
+            "door_height": 2.00,
+            "door_width_total": 9.10,
+            "time_fraction_door_open": 0.112,
+            "heat_transfer_coefficient_chassis": 2.8,
+            "cabin_absorptivity": 0.2,
+            "window_transmissivity": 0.8,
+            "fraction_obstruction_roof": 0.7,
+            "fraction_obstruction_floor": 0.3,
+            "volume_flow_rate_ventilation": 0.37,
+            "heating_power_auxiliary": 1.44,
+            "temperature_control_curve": "VBZ Cobra Tram, heating to 18°C",
+            "heating_cooling_devices": {
+                "resistive_heating_power_max": 102.0,
+                "heat_pumps": [
+                    {
+                        "name": "Cooler",
+                        "electric_power_max": 50.0,
+                        "exergy_efficiency": 0.0275,
+                        "heating": false,
+                        "cooling": true
+                    }
+                ]
+            }
+        }
+    },
+
+    "vehicle_parameter_alternative": {
+        "parameter": "temperature_control_curve",
+        "values": [
+            "VBZ Cobra Tram, heating to 16°C",
+            "VBZ Cobra Tram, heating to 18°C",
+            "VBZ Cobra Tram, heating to 20°C"
+        ]
+    },
+
+    "operation_schedule": {
+        "name": "VBZ Cobra Tram Operation",
+        "data": {
+            "location": "Zurich",
+            "date_begin": "01-01",
+            "date_end": "12-31",
+            "time_begin": "06:00",
+            "time_end": "00:00",
+            "passenger_number": 31.8,
+            "obstacle_distance": 9.9,
+            "obstacle_height": 17.1,
+            "cost_electricity": 0.225,
+            "vehicles_in_operation": {
+                "VBZ Cobra Tram": 70.4
+            }
+        }
+    },
+
+    "scenarios": {
+        "Heating to 16°C": {
+            "VBZ Cobra Tram Operation - VBZ Cobra Tram": "{Temperature control curve: VBZ Cobra Tram, heating to 16°C}"
+        },
+        "Heating to 18°C": {
+            "VBZ Cobra Tram Operation - VBZ Cobra Tram": "{Temperature control curve: VBZ Cobra Tram, heating to 18°C}"
+        },
+        "Heating to 20°C": {
+            "VBZ Cobra Tram Operation - VBZ Cobra Tram": "{Temperature control curve: VBZ Cobra Tram, heating to 20°C}"
+        }
+    },
+
+    "scenario_reference": "Heating to 20°C"
+}

@@ -1,0 +1,118 @@
+{
+    "temperature_control_curve": {
+        "name_char_length_max": 75,
+        "temperature_heating_cooling_min": -100.0,
+        "temperature_heating_cooling_max": 100.0,
+        "temperature_environment_min": -100.0,
+        "temperature_environment_max": 100.0,
+        "temperature_step": 0.01,
+        "plot_temperature_environment_min": -1e6,
+        "plot_temperature_environment_max": 1e6,
+        "plot_temperature_environment_default_min": -10.0,
+        "plot_temperature_environment_default_max": 35.0,
+        "plot_temperature_vehicle_default_min": 5,
+        "plot_temperature_vehicle_default_max": 25,
+        "plot_temperature_range_extend": 1.0,
+        "plot_temperature_vehicle_heating_undefined": -1e6,
+        "plot_temperature_vehicle_cooling_undefined": 1e6
+    },
+
+    "vehicle": {
+        "name_char_length_max": 75,
+        "length_min": 3.0,
+        "length_max": 1000.0,
+        "width_min": 1.0,
+        "width_max": 10.0,
+        "height_min": 1.0,
+        "height_max": 10.0,
+        "door_height_min": 1.0,
+        "door_height_max": 10.0,
+        "door_width_total_min": 0.5,
+        "door_width_total_max": 1000.0,
+        "area_windows_front_min": 0.0,
+        "area_windows_front_max": 100.0,
+        "area_windows_side_min": 0.0,
+        "area_windows_side_max": 100.0,
+        "geometry_step": 0.01,
+        "fraction_min": 0.0,
+        "fraction_max": 1.0,
+        "fraction_step": 0.01,
+        "fraction_step_fine": 0.0001,
+        "heat_transfer_coefficient_min": 0.0,
+        "heat_transfer_coefficient_max": 100.0,
+        "heat_transfer_coefficient_step": 0.01,
+        "volume_flow_rate_min": 0.0,
+        "volume_flow_rate_max": 1000.0,
+        "volume_flow_rate_step": 0.01,
+        "heating_power_auxiliary_min": 0.0,
+        "heating_power_auxiliary_max": 1e6,
+        "resistive_heating_power_min": 0.0,
+        "resistive_heating_power_max": 1e6,
+        "heat_pump_electric_power_min": 0.0,
+        "heat_pump_electric_power_max": 1e6,
+        "power_step": 0.01
+    },
+
+    "operation_schedule": {
+        "name_char_length_max": 75,
+        "passenger_number_min": 0.0,
+        "passenger_number_max": 1e5,
+        "passenger_number_step": 0.1,
+        "obstacle_distance_min": 0.5,
+        "obstacle_distance_max": 1000.0,
+        "obstacle_height_min": 0.0,
+        "obstacle_height_max": 1e5,
+        "geometry_step": 0.01,
+        "cost_min": 0.0,
+        "cost_max": 1e6,
+        "cost_step": 0.001,
+        "vehicle_number_max": 1e6
+    },
+
+    "parameters_vehicle": {
+        "name": "Name",
+        "length": "Length [m]",
+        "width": "Width [m]",
+        "height": "Height [m]",
+        "door_height": "Door height [m]",
+        "door_width_total": "Tot. door width [m]",
+        "area_windows_front": "Front windows area [m²]",
+        "area_windows_side": "Side windows area [m²]",
+        "time_fraction_door_open": "Time fraction door open",
+        "fraction_obstruction_roof": "Fraction obstruction roof",
+        "fraction_obstruction_floor": "Fraction obstruction floor",
+        "heat_transfer_coefficient_chassis": "Chassis thermal conductivity [W/(m²K)]",
+        "cabin_absorptivity": "Cabin absorptivity",
+        "window_transmissivity": "Window transmissivity",
+        "volume_flow_rate_ventilation": "Ventilation volume flow [m³/s]",
+        "heating_power_auxiliary": "Auxiliary heating power [kW]",
+        "temperature_control_curve": "Temperature control curve",
+        "heating_cooling_devices": "Max. electric power for heating & cooling [kW]"
+    },
+
+    "parameters_operation_schedule": {
+        "name": "Name",
+        "location": "Location",
+        "date_begin": "Begin date",
+        "date_end": "End date",
+        "time_begin": "Begin time",
+        "time_end": "End time",
+        "passenger_number": "Passenger number",
+        "obstacle_distance": "Obstacle distance [m]",
+        "obstacle_height": "Obstacle height [m]",
+        "cost_electricity": "Electricity cost [EUR/kWh]",
+        "vehicles_in_operation": "Vehicle types and amounts"
+    },
+
+    "scenario": {
+        "name_char_length_max": 75
+    },
+
+    "results": {
+        "rounding_precision": 1e-1
+    },
+
+    "units": {
+        "cost": "EUR"
+    }
+}
