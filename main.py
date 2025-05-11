@@ -2053,7 +2053,7 @@ def generate_results_tab(tab:st.delta_generator.DeltaGenerator)->None:
             barmode='stack',
             title="Scenario Energy & Cost Comparison",
             xaxis=dict(
-                title=f"Electricity consumption [{energy_unit}]",
+                title=f"Electricity consumption [{energy_unit}/y]",
                 side='top'
             ),
             #xaxis2=dict(
