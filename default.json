@@ -68,7 +68,7 @@
                     {
                         "name": "Cooler",
                         "electric_power_max": 50.0,
-                        "exergy_efficiency": 0.0275,
+                        "exergy_efficiency": 0.2,
                         "heating": false,
                         "cooling": true
                     }

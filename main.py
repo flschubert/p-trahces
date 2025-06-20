@@ -902,6 +902,7 @@ def handle_edit_remove_vehicles()->None:
                     "exergy_efficiency": st.column_config.NumberColumn(
                         "Exergy efficiency",
                         help="Exergy efficiency of the heat pump (relative to the Carnot efficiency)",
+                        default=dh.get_parameter_option("vehicle", "heat_pump_exergy_efficiency_default"),
                         min_value=dh.get_parameter_option("vehicle", "fraction_min"),
                         max_value=dh.get_parameter_option("vehicle", "fraction_max"),
                         step=dh.get_parameter_option("vehicle", "fraction_step_fine"),

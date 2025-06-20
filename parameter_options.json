@@ -50,6 +50,7 @@
         "resistive_heating_power_max": 1e6,
         "heat_pump_electric_power_min": 0.0,
         "heat_pump_electric_power_max": 1e6,
+        "heat_pump_exergy_efficiency_default": 0.2,
         "power_step": 0.01
     },
 
