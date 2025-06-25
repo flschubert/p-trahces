@@ -3,8 +3,6 @@
 
 ##### IMPORTS #####
 
-from streamlit import session_state
-
 import data_handler as dh
 
 import copy
@@ -660,8 +658,7 @@ def simulate_system(operation_schedules:dict,
                 for key_vehicle, data_vehicle in data_operation_schedule.items():
                     for key_version, data_version in data_vehicle.items():
                         version_parameter_set_str = dh.convert_dictionary_to_str(
-                            session_state["specification"]["vehicle_versions"][key_vehicle][key_version][
-                                "parameter_set"],
+                            vehicle_versions[key_vehicle][key_version]["parameter_set"],
                             keys_to_display_names=True)
                         warning_text += "\n\t\t- " + key_vehicle + " " + version_parameter_set_str + ": "
                         first_month = True
@@ -680,8 +677,7 @@ def simulate_system(operation_schedules:dict,
                 for key_vehicle, data_vehicle in data_operation_schedule.items():
                     for key_version, data_version in data_vehicle.items():
                         version_parameter_set_str = dh.convert_dictionary_to_str(
-                            session_state["specification"]["vehicle_versions"][key_vehicle][key_version][
-                                "parameter_set"],
+                            vehicle_versions[key_vehicle][key_version]["parameter_set"],
                             keys_to_display_names=True)
                         warning_text += "\n\t\t- " + key_vehicle + " " + version_parameter_set_str + ": "
                         first_month = True

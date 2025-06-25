@@ -67,7 +67,7 @@
                 "heat_pumps": [
                     {
                         "name": "Cooler",
-                        "electric_power_max": 50.0,
+                        "electric_power_max": 10.0,
                         "exergy_efficiency": 0.2,
                         "heating": false,
                         "cooling": true
